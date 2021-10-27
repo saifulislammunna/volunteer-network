@@ -37,6 +37,7 @@ function App() {
               <Route path="/blog">
                     <Blog></Blog>
               </Route> 
+             
               <Route path="*">
                     <NotFound></NotFound>
               </Route>
