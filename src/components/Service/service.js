@@ -17,7 +17,7 @@ const Service = (props) => {
             <div className="single-service">
               {/* card group added */}
             <CardGroup >
-  <Card  className=" ">
+  <Card  className="card">
     <Card.Img variant="top" src={img} className="  p-5"  width="450" height="350" />
     <Card.Body>
       <Card.Title className="fs-2">   {name}</Card.Title>
