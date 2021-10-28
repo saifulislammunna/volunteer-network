@@ -15,7 +15,7 @@ const Login = ( ) => {
  const { singnInUsingGoogle} = useAuth(); 
  const location = useLocation();
  const history = useHistory();
- const redirect_uri = location.state?.form || `/home`;
+ const redirect_uri = location.state?.from || `/home`;
 /*  console.log('came from',location.state?.form); */
  const handleGoogleLogin = () => {
     

@@ -1,0 +1,24 @@
+.item{
+    background-color: #FEFEDF;
+    border-radius: 2px solid #F0C2FF;
+    margin: 10px;
+    padding: 10px; 
+     
+}
+.item img{
+    width: 200px;
+}
+.item-name{
+    color: #000000;
+    font-weight: 400;
+}
+.link{
+    
+    text-decoration: none;
+    color: black;
+   
+}
+.link:hover{
+    color: black;
+}
+ 

@@ -1,18 +1,19 @@
 import React from 'react';
-import {Button,CardGroup,Card} from 'react-bootstrap';
+import {/* Button */CardGroup,Card} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfo } from '@fortawesome/free-solid-svg-icons';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfo } from '@fortawesome/free-solid-svg-icons'; */
 import './Service.css'
 
 
 /* service component */
 const Service = (props) => {
-    const {img,name,description,id} = props.service;
+    const {img,name, id} = props.service;
     const url = `/service/${id}`;
     return (
-       
-        <div>
+    <Link  className="link" to={url}>
+    
+    <div>
             <div className="single-service">
               {/* card group added */}
             <CardGroup >
@@ -29,10 +30,12 @@ const Service = (props) => {
     
   </Card>
   </CardGroup>
+   
     </div>
             
         </div>
         
+    </Link>
     );
 };
 /* exporting service component */

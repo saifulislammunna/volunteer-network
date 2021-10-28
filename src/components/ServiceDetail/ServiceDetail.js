@@ -11,7 +11,7 @@ const ServiceDetail = () => {
     // console.log(params);
     useEffect(()=>{
        
-        fetch(`https://raw.githubusercontent.com/saifulislammunna/service-api/main/service.json`)
+        fetch('https://safe-dawn-33907.herokuapp.com/services')
         .then(res => res.json())
         .then(data => {
             console.log(data)
