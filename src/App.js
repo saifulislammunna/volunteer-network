@@ -15,6 +15,11 @@ import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+import Admin from './components/Admin/Admin';
+import { FooterContainer } from './containers/footer';
+
+
+ 
 function App() {
   return (
     <div className="App">
@@ -48,6 +53,9 @@ function App() {
                <Route path="/addService">
                    <AddService></AddService>
                </Route>
+               <Route path="/admin">
+                     <Admin></Admin>
+               </Route>
                <PrivateRoute path="/service/:id">
                  <ServiceDetail></ServiceDetail>
               </PrivateRoute>
@@ -55,6 +63,7 @@ function App() {
                     <NotFound></NotFound>
               </Route>
           </Switch>
+           <FooterContainer></FooterContainer>
        </BrowserRouter>
        </AuthProvider>
     </div>
