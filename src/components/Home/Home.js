@@ -9,7 +9,7 @@ const Home = () => {
     const [ services, setServices] = useState([]);
      
     useEffect(()=>{
-      fetch(`./services.json`)
+      fetch('https://safe-dawn-33907.herokuapp.com/services')
       .then(res => res.json())
       .then(data => setServices(data));
     },[])

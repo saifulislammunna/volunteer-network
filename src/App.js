@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import Events from './components/Events/Events';
 import Donation from './components/Donation/Donation';
 import Blog from './components/Blog/Blog';
+import AddService from './components/AddService/AddService';
 
 function App() {
   return (
@@ -37,7 +38,9 @@ function App() {
               <Route path="/blog">
                     <Blog></Blog>
               </Route> 
-             
+               <Route path="/addService">
+                   <AddService></AddService>
+               </Route>
               <Route path="*">
                     <NotFound></NotFound>
               </Route>
